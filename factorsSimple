@@ -1,0 +1,15 @@
+def factorsOfANumber(x):
+	factors = []
+	multiples = []
+	for i in range (1, 10):
+		if x%i == 0:
+			factors.append(i)
+			factors.append(int(x/i))
+			z = i, int(x/i)
+			multiples.append (sorted(z))
+		else: 
+			pass
+	print (sorted(factors))
+	print (sorted(multiples))
+
+factorsOfANumber(15)
